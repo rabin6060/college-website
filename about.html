@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/45947318ab.js" crossorigin="anonymous"></script>
+    <title>University Website Design</title>
+</head>
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt="logo"></a>
+            <div class="list" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="course.html">course</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+   <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest University</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum laboriosam vel eius incidunt cum ab ullam quaerat labore sequi. Animi sit fugiat expedita aliquid, repellat eius vero labore explicabo ullam!
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eveniet laboriosam, vel odio earum animi officiis quas ipsa eligendi quasi perspiciatis, itaque ipsum blanditiis assumenda voluptate tempore eaque delectus adipisci.</p>
+         <a href="#">Explore now</a>
+        </div>
+        <div class="about-col">
+            <img src="eduford_img/about.jpg" alt="about">
+        </div>
+    </div>
+   </section>
+ 
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda debitis facilis et adipisci animi minima,<br> laborum eligendi accusamus dicta non, quis doloribus enim autem aliquam exercitationem aspernatur saepe quos?</p>
+        <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>Made by <i class="fa-solid fa-heart"></i> Rabin</p>
+    </section>
+
+<script>
+         var navlinks = document.getElementById("navlinks")
+
+         function showMenu(){
+            navlinks.style.right="0";
+         }
+         function hideMenu(){
+            navlinks.style.right="-200px";
+         }
+</script>
+</body>
+</html>

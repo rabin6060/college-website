@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    min-height:100vh ;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+}
+.list ul{
+    flex: 1;
+    text-align: right;
+}
+.list ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 15px;
+    text-transform: uppercase;
+}
+.list ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.list ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.list ul li:hover::after{
+    width: 100%;
+}
+.content-box{
+    width: 80%;
+    margin:20px auto;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content-box h1{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 50px;
+}
+.content-box p{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 15px;
+}
+.content-box a{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 8px 15px;
+    background: transparent;
+    text-decoration: none;
+    transition: .5s;
+    color: white;
+    position: relative;
+    text-transform: capitalize;
+    
+}
+.content-box a:hover{
+    background: red;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .content-box h1{
+        font-size: 20px;
+    }
+    .list ul li{
+        display: block;
+    }
+    .list{
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        text-align: left;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    nav .list ul{
+        padding: 30px;
+    }
+
+}
+.middle{
+    width: 100%;
+    background: white;
+}
+.title{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 100px;
+}
+.title h2{
+    font-size: 50px;
+    font-weight: 500;
+    padding:50px 0 15px;
+    
+}
+.title p{
+    color: lightslategray;
+    line-height: 22px;
+}
+.level{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.level .state{
+    flex-basis: 26%;
+    background: #cea8a8;
+    margin-bottom: 5%;
+    padding: 30px 20px;  
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.level .state:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+.state h3{
+    margin: 15px;
+    font-size: 30px;
+}
+.state p{
+    color: lightslategray;
+}
+@media(max-width:600px){
+    .level{
+        flex-direction: column;
+    }
+}
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+ h1{
+    font-size: 40px;
+    font-weight: 650px;
+    margin-bottom:5px;
+}
+ p{
+    line-height: 22px;
+    color: lightslategray;
+    margin-bottom: 2%;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.col{
+    flex-basis: 30%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    height: 100%;
+    width: 100%;
+    background:transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    
+}
+.layer:hover h3{
+    transition: .5s;
+    opacity: 1;
+    bottom: 50%;
+}
+@media(max-width:600px){
+    .row{
+        flex-direction: column;
+    }
+}
+.facility{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.fac-col{
+    flex-basis: 25%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    text-align: left;
+}
+.fac-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.fac-col p{
+    padding: 10px 0 10px;
+}
+h3{
+    padding-top: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 150px;
+}
+
+.reviews{
+    flex-basis: 45%;
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    text-align: left;
+    padding: 20px;
+    border-radius: 15px;
+    background: #fff3f3;
+
+}
+.reviews img{
+    width: 100px;
+    border-radius: 50%;
+    padding-right: 15px;
+}
+.reviews .fa{
+    color: #f44336;
+}
+.contact{
+     width: 80%;
+     margin: 5% auto;
+     text-align: center;
+     border-radius: 10px;
+     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(eduford_img/banner2.jpg);
+}
+.contact h1{
+    color: white;
+    font-size: 30px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.contact a{
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.contact a:hover{
+    transition: 0.5s;
+    background: #f44336;
+}
+@media(max-width:600px){
+    .contact h1{
+        font-size: 20px;
+    }
+}
+.footer{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.footer h4{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.footer .fa-brands{
+    color: #f44336;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header h1{
+    padding-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.about-us .about-col{
+    flex-basis: 48%;
+    padding: 30px 20px;
+}
+.about-us .about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+.about-col p{
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+.about-col a{
+    border: 1px solid #f44336;
+    border-radius: 10px;
+    color: #f44336;
+    padding: 8px 14px;
+    text-decoration: none;
+    transition:transform .5s;
+    
+}
+.about-col a:hover{
+    background: #f44336;
+    color: white;
+}
+.blog-content{
+    width: 80%;
+    margin:auto;
+    padding: 30px;
+}
+.content-row{
+    display: flex;
+    justify-content: space-around;
+}
+.blog-left{
+    flex-basis: 45%;
+}
+.blog-left img{
+    width: 100%;
+}
+.blog-left h2{
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: 300;
+}
+.blog-right{
+    flex-basis: 35%;
+}
+.blog-right h2{
+    font-size: 35px;
+    font-weight: 300;
+    padding: 15px 0;
+    background-color: #f44336;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+.blog-right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.blog-left .comment{
+    width: 70%;
+    margin: 50px 0;
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+}
+.comment h3{
+    text-align: left;
+}
+.formy input,textarea{
+    width: 100%;
+    padding: 8px 0;
+    margin: 5px auto;
+    background: #f0f0f0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.btn{
+    border: 1px solid #f44336;
+    border-radius: 10px;
+    color: #f44336;
+    padding: 8px 14px;
+    text-decoration: none;
+    transition:transform .5s;
+    outline: none;
+}
+.btn:hover{
+    background-color: #f44336;
+    color: white;
+}
+@media (max-width:600px)
+{
+    .sub-header h1{
+        font-size: 20px;
+    }
+    .content-row{
+        flex-direction: column;
+    }
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 45%;
+    margin-bottom: 20px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-col div .fa-solid{
+    font-size: 30px;
+    color: #f44336;
+    margin: 15px;
+}
+.contact-col div p{
+    padding: 0;
+    font-size: 14px;
+}
+.contact-col div h5{
+    font-size: 25px;
+    font-weight: 300;
+}
+.formy{
+    padding: 10px;
+    outline: auto;
+
+}
